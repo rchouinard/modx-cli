@@ -1,0 +1,15 @@
+{
+  "name": "rychdev/modx-cli",
+  "description": "A CLI for MODX",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ryan Chouinard",
+      "email": "rchouinard@gmail.com"
+    }
+  ],
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "stable"
+}
