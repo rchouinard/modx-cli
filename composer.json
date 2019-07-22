@@ -8,8 +8,20 @@
       "email": "rchouinard@gmail.com"
     }
   ],
+  "require": {
+    "consolidation/annotated-command": "^2.12",
+    "symfony/console": "^4.3"
+  },
   "config": {
+    "optimize-autoloader": true,
     "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "ModxCli\\": [
+        "src/"
+      ]
+    }
   },
   "minimum-stability": "stable"
 }
