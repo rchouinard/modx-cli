@@ -9,7 +9,6 @@
     }
   ],
   "require": {
-    "consolidation/annotated-command": "^2.12",
     "symfony/console": "^4.3"
   },
   "config": {
