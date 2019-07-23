@@ -1,12 +1,11 @@
 #!/usr/bin/env php
-<?php declare(strict_types=1);
+<?php
 
-$file = dirname(__DIR__) . '/vendor/autoload.php';
-if (file_exists($file)) {
-    require $file;
-} else if (!class_exists(ModxCli\ModxCli::class, false)) {
-    throw new Exception('Autoloader not found! Please run composer install.');
-}
+namespace ModxCli;
 
-$application = new ModxCli\ModxCli('modx-cli', '0.0.0-dev.0');
+set_time_limit(0);
+
+require dirname(__DIR__).'/vendor/autoload.php';
+
+$application = new ModxCli();
 $application->run();
